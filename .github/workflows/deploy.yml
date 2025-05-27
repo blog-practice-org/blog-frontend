@@ -23,7 +23,7 @@ jobs:
           source-directory: 'output'
           destination-github-username: nue-os
           destination-repository-name: blog-frontend
-          user-email: ${{ secrets.YOUR_ACCOUNT_EMAIL }}
+          user-email: ${{ secrets.EMAIL }}
           commit-message: ${{ github.event.commits[0].message }}
           target-branch: main
       - name: Test get variable exported by push-to-another-repository
